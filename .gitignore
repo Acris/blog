@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+db.json
+hexo-generator-amp-cached.json
+*.log
+node_modules/
+public/
+scaffolds/
+source/
+themes/
+.deploy*/
