@@ -8,7 +8,7 @@ var htmlmin = require('gulp-htmlmin');
 gulp.task('minify-css', function (cb) {
     pump([
             gulp.src('./public/**/*.css'),
-            cleanCSS({compatibility: 'ie8'}),
+            cleanCSS({compatibility: 'ie9'}),
             gulp.dest('./public')
         ],
         cb
