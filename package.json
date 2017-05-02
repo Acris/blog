@@ -25,6 +25,8 @@
     "gulp-clean-css": "^3.0.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-uglify": "^2.1.2",
-    "pump": "^1.0.2"
+    "pump": "^1.0.2",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
   }
 }
