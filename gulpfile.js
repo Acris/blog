@@ -35,9 +35,7 @@ gulp.task('minify-html', function (cb) {
 gulp.task('minify-js', function (cb) {
     pump([
             gulp.src('./public/**/*.js'),
-            babel({
-	            presets: ['env']
-		    }),
+            babel({presets: ['env']}),
             uglify(),
             gulp.dest('./public')
         ],
