@@ -23,7 +23,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'rm -rf $BLOG_HOME/* && cp -a $WORKSPACE/public/. $BLOG_HOME'
-        echo 'Depoy success!'
+        echo 'Deploy success!'
       }
     }
     stage('Clean') {
