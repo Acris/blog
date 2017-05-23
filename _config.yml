@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Re: Orz"
+title: Mr.X Blog
 subtitle: Code is poetry
 description: 代码如诗
 author: Acris Liu
@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.reorz.com
+url: https://blog.mrx.one
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
