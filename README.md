@@ -1,2 +1,2 @@
-# Mr.X Blog
+# Re: Orz Blog
 Powered by Hexo, theme by NexT.
