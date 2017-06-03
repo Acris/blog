@@ -37,6 +37,6 @@ pipeline {
     BLOG_HOME = '/usr/share/nginx/html/blog'
   }
   triggers {
-    pollSCM('H 2 * * *')
+    pollSCM('*/5 * * * *')
   }
 }
