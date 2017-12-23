@@ -9,3 +9,4 @@ scaffolds/
 source/
 themes/
 .deploy*/
+.idea/
