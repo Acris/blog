@@ -111,3 +111,31 @@ authorDetail:
     height: 150
   description: Coding is my life
 copyright_notice: All rights reserved
+
+# PWA
+pwa:
+  manifest:
+    path: /manifest.json
+    body:
+      name: Acris' Blog
+      short_name: Acris' Blog
+      icons:
+        - src: https://cdn.reorz.com/images/2017/02/Lying.jpg
+          sizes: 150x150
+          type: image/png
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+      posts: 5
+    opts:
+      networkTimeoutSeconds: 5
+    routes:
+      - pattern: !!js/regexp /hm.baidu.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /\//
+        strategy: networkFirst
+  priority: 5
