@@ -119,6 +119,11 @@ pwa:
     body:
       name: Acris' Blog
       short_name: Acris' Blog
+      background_color: "#222222"
+      theme_color: "#222222"
+      display: standalone
+      description: Acris' Blog - Code is poetry
+      start_url: /?launcher=true
       icons:
         - src: https://cdn.reorz.com/images/2018/01/blog-icon-72x72.png
           sizes: 72x72
@@ -144,10 +149,6 @@ pwa:
         - src: https://cdn.reorz.com/images/2018/01/blog-icon-512x512.png
           sizes: 512x512
           type: image/png
-      background_color: "#222222"
-      theme_color: "#222222"
-      display: standalone
-      description: Acris' Blog - Code is poetry
   serviceWorker:
     path: /service-worker.js
     preload:
