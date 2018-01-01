@@ -149,7 +149,7 @@ pwa:
       display: standalone
       description: Acris' Blog - Code is poetry
   serviceWorker:
-    path: /sw.js
+    path: /service-worker.js
     preload:
       urls:
         - /
