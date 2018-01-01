@@ -123,6 +123,10 @@ pwa:
         - src: https://cdn.reorz.com/images/2017/02/Lying.jpg
           sizes: 150x150
           type: image/png
+      background_color: "#222222"
+      theme_color: "#222222"
+      display: standalone
+      description: Acris' Blog - Code is poetry
   serviceWorker:
     path: /sw.js
     preload:
