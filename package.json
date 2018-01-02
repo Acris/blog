@@ -23,12 +23,13 @@
     "hexo-server": "^0.3.0"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "gulp-clean-css": "^3.9.2",
+    "gulp-htmlclean": "^2.7.16",
     "gulp-htmlmin": "^4.0.0",
     "gulp-uglify": "^3.0.0",
-    "pump": "^2.0.0",
-    "gulp-babel": "^6.1.2",
-    "babel-preset-env": "^1.6.1"
+    "pump": "^2.0.0"
   }
 }
