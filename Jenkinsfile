@@ -7,8 +7,8 @@ pipeline {
           git(url: 'git@gitlab.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'archlinux')
         }
         
-        dir(path: 'themes/next') {
-          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'archlinux')
+        dir(path: 'themes/material') {
+          git(url: 'git@github.com:Acris/hexo-theme-material.git', branch: 'master', changelog: true, poll: true, credentialsId: 'archlinux')
         }
         
         echo 'Initialize success!'
