@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'yarn add hexo-cli gulp-cli && yarn && yarn run hexo clean && yarn run hexo generate && yarn run gulp'
+        sh 'npm install hexo-cli gulp-cli -g && npm install && hexo clean && hexo generate && gulp'
         echo 'Build success!'
       }
     }
