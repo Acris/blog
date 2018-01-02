@@ -28,7 +28,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^2.0.0",
-    "gulp-babel": "^7.0.0",
+    "gulp-babel": "^6.1.2",
     "babel-preset-env": "^1.6.1"
   }
 }

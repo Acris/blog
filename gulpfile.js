@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var pump = require('pump');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
+var htmlclean = require('gulp-htmlclean');
 var htmlmin = require('gulp-htmlmin');
 var babel = require('gulp-babel');
 
@@ -19,6 +20,7 @@ gulp.task('minify-css', function (cb) {
 gulp.task('minify-html', function (cb) {
     pump([
             gulp.src('./public/**/*.html'),
+            htmlclean(),
             htmlmin({
                 removeComments: true,
                 minifyJS: true,
