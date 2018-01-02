@@ -7,7 +7,7 @@ title: Acris' Blog
 subtitle: Code is poetry
 description: 代码如诗
 author: Acris Liu
-language: zh-CN
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
@@ -38,9 +38,9 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: false
-  auto_detect: false
+  enable: true
+  line_number: true
+  auto_detect: true
   tab_replace:
 
 # Home page setting
