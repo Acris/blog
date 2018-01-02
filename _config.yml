@@ -158,8 +158,10 @@ pwa:
     opts:
       networkTimeoutSeconds: 5
     routes:
-      - pattern: !!js/regexp /cdn.reorz.com/
+      - pattern: !!js/regexp /www.google-analytics.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif|html|svg|json|xml)$/
         strategy: cacheFirst
-      - pattern: !!js/regexp /cdn.bootcss.com/
-        strategy: cacheFirst
+      - pattern: !!js/regexp /\//
+        strategy: networkFirst
   priority: 5
