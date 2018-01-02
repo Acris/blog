@@ -20,7 +20,6 @@ gulp.task('minify-css', function (cb) {
 gulp.task('minify-html', function (cb) {
     pump([
             gulp.src('./public/**/*.html'),
-            htmlclean(),
             htmlmin({
                 removeComments: true,
                 minifyJS: true,
@@ -28,6 +27,7 @@ gulp.task('minify-html', function (cb) {
                 minifyURLs: true,
                 collapseWhitespace: true
             }),
+            htmlclean(),
             gulp.dest('./public')
         ],
         cb
