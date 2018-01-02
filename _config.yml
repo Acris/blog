@@ -158,10 +158,8 @@ pwa:
     opts:
       networkTimeoutSeconds: 5
     routes:
-      - pattern: !!js/regexp /hm.baidu.com/
-        strategy: networkOnly
-      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+      - pattern: !!js/regexp /cdn.reorz.com/
         strategy: cacheFirst
-      - pattern: !!js/regexp /\//
-        strategy: networkFirst
+      - pattern: !!js/regexp /cdn.bootcss.com/
+        strategy: cacheFirst
   priority: 5
