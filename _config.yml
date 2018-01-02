@@ -160,7 +160,7 @@ pwa:
     routes:
       - pattern: !!js/regexp /www.google-analytics.com/
         strategy: networkOnly
-      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif|html|svg|json|xml)$/
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif|svg)$/
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
         strategy: networkFirst
