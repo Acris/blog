@@ -4,11 +4,11 @@ pipeline {
     stage('Initialize') {
       steps {
         dir(path: 'source') {
-          git(url: 'git@gitlab.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'archlinux')
+          git(url: 'git@gitlab.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'amazon-linux')
         }
         
         dir(path: 'themes/next') {
-          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'archlinux')
+          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'amazon-linux')
         }
         
         echo 'Initialize success!'
