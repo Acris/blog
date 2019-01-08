@@ -4,7 +4,7 @@ pipeline {
     stage('Initialize') {
       steps {
         dir(path: 'source') {
-          git(url: 'git@gitlab.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'amazon-linux')
+          git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'amazon-linux')
         }
         
         dir(path: 'themes/next') {
