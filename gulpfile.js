@@ -1,9 +1,14 @@
 var gulp = require('gulp')
+var del = require('del')
 var cleanCSS = require('gulp-clean-css')
 var uglify = require('gulp-uglify')
 var htmlclean = require('gulp-htmlclean')
 var htmlmin = require('gulp-htmlmin')
 var babel = require('gulp-babel')
+
+function clean() {
+    return del(['./dist'])
+}
 
 function cssMinify() {
     return gulp.src('./public/**/*.css')
