@@ -33,7 +33,7 @@ function htmlMinify(cb) {
 function jsMinify(cb) {
     return gulp.src('./public/**/*.js')
         .pipe(babel({
-            presets: ['env']
+            presets: ['@babel/env']
         }),)
         .pipe(uglify())
         .pipe(gulp.dest('./public'))
