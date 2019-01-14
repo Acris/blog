@@ -20,7 +20,6 @@ function cssMinify() {
 
 function htmlMinify() {
     return gulp.src('./public/**/*.html')
-        .pipe(htmlclean())
         .pipe(htmlmin({
             removeComments: true,
             minifyJS: true,
@@ -28,6 +27,7 @@ function htmlMinify() {
             minifyURLs: true,
             collapseWhitespace: true
         }))
+        .pipe(htmlclean())
         .pipe(gulp.dest('./public'))
 }
 
