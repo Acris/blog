@@ -1,10 +1,10 @@
-var gulp = require('gulp')
-var del = require('del')
-var cleanCSS = require('gulp-clean-css')
-var uglify = require('gulp-uglify')
-var htmlclean = require('gulp-htmlclean')
-var htmlmin = require('gulp-htmlmin')
-var babel = require('gulp-babel')
+const gulp = require('gulp')
+const del = require('del')
+const cleanCSS = require('gulp-clean-css')
+const uglify = require('gulp-uglify')
+const htmlclean = require('gulp-htmlclean')
+const htmlmin = require('gulp-htmlmin')
+const babel = require('gulp-babel')
 
 function clean() {
     return del(['./dist'])
@@ -18,7 +18,7 @@ function cssMinify() {
         .pipe(gulp.dest('./public'))
 }
 
-function htmlMinify(cb) {
+function htmlMinify() {
     return gulp.src('./public/**/*.html')
         .pipe(htmlmin({
             removeComments: true,
@@ -27,10 +27,11 @@ function htmlMinify(cb) {
             minifyURLs: true,
             collapseWhitespace: true
         }))
+        .pipe(htmlclean())
         .pipe(gulp.dest('./public'))
 }
 
-function jsMinify(cb) {
+function jsMinify() {
     return gulp.src('./public/**/*.js')
         .pipe(babel({
             presets: ['@babel/env']
