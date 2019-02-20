@@ -117,6 +117,7 @@ generator_amp:
     path: https://cdn.reorz.com/images/2017/03/amp-substitute-title-image.png
     width: 1024
     height: 800
+  google_analytics: UA-96324267-1
   warningLog: false   # To AMP HTML validate automatically, please set true.
 
 # PWA
