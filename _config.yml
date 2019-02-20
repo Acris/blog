@@ -95,6 +95,16 @@ search:
   path: search.xml
   field: post
 
+# Footer Option
+authorDetail:
+  authorReading: Programmer
+  avatar:
+    path: https://cdn.reorz.com/images/2017/02/Lying.jpg
+    width: 150
+    height: 150
+  description: Coding is poetry
+copyright_notice: All rights reserved
+
 # The following settings is the quick start options.
 generator_amp:
   templateDir: amp-template
@@ -107,19 +117,7 @@ generator_amp:
     path: https://cdn.reorz.com/images/2017/03/amp-substitute-title-image.png
     width: 1024
     height: 800
-  google_analytics: UA-96324267-1
   warningLog: false   # To AMP HTML validate automatically, please set true.
-  cache: hexo-generator-amp-cached.json
-
-# Footer Option
-authorDetail:
-  authorReading: Programmer
-  avatar:
-    path: https://cdn.reorz.com/images/2017/02/Lying.jpg
-    width: 150
-    height: 150
-  description: Coding is poetry
-copyright_notice: All rights reserved
 
 # PWA
 pwa:
@@ -128,11 +126,7 @@ pwa:
     body:
       name: Acris' Blog - Code is poetry
       short_name: Acris' Blog
-      background_color: "#222222"
-      theme_color: "#222222"
-      display: standalone
       description: Acris' Blog - Code is poetry
-      start_url: /?launcher=true
       icons:
         - src: https://cdn.reorz.com/images/2018/01/blog-icon-72x72.png
           sizes: 72x72
@@ -158,8 +152,12 @@ pwa:
         - src: https://cdn.reorz.com/images/2018/01/blog-icon-512x512.png
           sizes: 512x512
           type: image/png
+      start_url: /?launcher=true
+      theme_color: "#222222"
+      background_color: "#222222"
+      display: standalone
   serviceWorker:
-    path: /service-worker.js
+    path: /sw.js
     preload:
       urls:
         - /
@@ -169,7 +167,7 @@ pwa:
     routes:
       - pattern: !!js/regexp /www.google-analytics.com/
         strategy: networkOnly
-      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif|svg)$/
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
         strategy: networkFirst
