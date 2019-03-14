@@ -6,6 +6,7 @@
 title: Acris' Blog
 subtitle: Code is poetry
 description: 代码如诗
+keywords: Acris, Java, Linux
 author: Acris Liu
 language: zh-CN
 timezone: Asia/Shanghai
@@ -79,97 +80,38 @@ theme: next
 deploy:
   type:
 
-# Sitemap
+# Plugin Configuration
+# hexo-generator-sitemap
 sitemap:
   path: sitemap.xml
 
-# Feed
+# hexo-generator-feed
 feed:
   type: atom
   path: atom.xml
   limit: 20
-  hub:
 
-# Search
+# hexo-generator-search
 search:
-  path: search.xml
+  path: search.json
   field: post
 
-# Footer Option
-authorDetail:
-  authorReading: Programmer
-  avatar:
-    path: https://cdn.reorz.com/images/2017/02/Lying.jpg
-    width: 150
-    height: 150
-  description: Coding is poetry
-copyright_notice: All rights reserved
+# hexo-html-minifier
+html_minifier:  
+  removeComments: true
+  collapseWhitespace: true
+  collapseBooleanAttributes: true
+  removeEmptyAttributes: true
+  removeScriptTypeAttributes: true
+  removeStyleLinkTypeAttributes: true
 
-# The following settings is the quick start options.
-generator_amp:
-  templateDir: amp-template
-  assetDistDir: amp-dist
-  logo:
-    path: https://cdn.reorz.com/images/2017/03/amp-logo.png
-    width: 600
-    height: 60
-  substituteTitleImage:
-    path: https://cdn.reorz.com/images/2017/03/amp-substitute-title-image.png
-    width: 1024
-    height: 800
-  google_analytics: UA-96324267-1
-  warningLog: false   # To AMP HTML validate automatically, please set true.
+# hexo-clean-css
+clean_css:
+  exclude: 
+    - *.min.css
 
-# PWA
-pwa:
-  manifest:
-    path: /manifest.json
-    body:
-      name: Acris' Blog - Code is poetry
-      short_name: Acris' Blog
-      description: Acris' Blog - Code is poetry
-      icons:
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-72x72.png
-          sizes: 72x72
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-96x96.png
-          sizes: 96x96
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-128x128.png
-          sizes: 128x128
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-144x144.png
-          sizes: 144x144
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-152x152.png
-          sizes: 152x152
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-192x192.png
-          sizes: 192x192
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-384x384.png
-          sizes: 384x384
-          type: image/png
-        - src: https://cdn.reorz.com/images/2018/01/blog-icon-512x512.png
-          sizes: 512x512
-          type: image/png
-      start_url: /?launcher=true
-      theme_color: "#222222"
-      background_color: "#222222"
-      display: standalone
-  serviceWorker:
-    path: /sw.js
-    preload:
-      urls:
-        - /
-      posts: 5
-    opts:
-      networkTimeoutSeconds: 5
-    routes:
-      - pattern: !!js/regexp /www.google-analytics.com/
-        strategy: networkOnly
-      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
-        strategy: cacheFirst
-      - pattern: !!js/regexp /\//
-        strategy: networkFirst
-  priority: 5
+# hexo-uglify
+uglify:
+  mangle: true
+  exclude: 
+    - *.min.js

@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'yarn add hexo-cli gulp-cli && yarn && yarn run hexo clean && yarn run hexo generate && yarn run gulp'
+        sh 'yarn add hexo-cli && yarn && yarn run hexo clean && yarn run hexo generate'
         echo 'Build success!'
       }
     }
@@ -34,7 +34,7 @@ pipeline {
     }
   }
   environment {
-    BLOG_HOME = '/usr/share/nginx/html/blog'
+    BLOG_HOME = '/srv/blog'
   }
   triggers {
     pollSCM('*/5 * * * *')
