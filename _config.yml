@@ -98,9 +98,12 @@ search:
 
 # hexo-html-minifier
 html_minifier:  
-  removeComments: true
   collapseWhitespace: true
   collapseBooleanAttributes: true
+  minifyCSS: true
+  minifyJS: true
+  removeComments: true
   removeEmptyAttributes: true
+  removeRedundantAttributes: true
   removeScriptTypeAttributes: true
   removeStyleLinkTypeAttributes: true
