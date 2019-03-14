@@ -104,14 +104,3 @@ html_minifier:
   removeEmptyAttributes: true
   removeScriptTypeAttributes: true
   removeStyleLinkTypeAttributes: true
-
-# hexo-clean-css
-clean_css:
-  exclude: 
-    - *.min.css
-
-# hexo-uglify
-uglify:
-  mangle: true
-  exclude: 
-    - *.min.js
