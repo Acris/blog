@@ -15,7 +15,6 @@
     "hexo-generator-search": "github:Wzpan/hexo-generator-search",
     "hexo-generator-sitemap": "github:hexojs/hexo-generator-sitemap",
     "hexo-generator-tag": "github:hexojs/hexo-generator-tag",
-    "hexo-html-minifier": "github:hexojs/hexo-html-minifier",
     "hexo-renderer-ejs": "github:hexojs/hexo-renderer-ejs",
     "hexo-renderer-marked": "github:hexojs/hexo-renderer-marked",
     "hexo-renderer-stylus": "github:hexojs/hexo-renderer-stylus",
