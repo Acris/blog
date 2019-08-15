@@ -98,13 +98,10 @@ search:
 
 # hexo-html-minifier
 html_minifier:
-  exclude:
-    - /node_modules/**
-    - /themes/**
   collapseWhitespace: true
   collapseBooleanAttributes: true
   minifyCSS: true
-  minifyJS: true
+  minifyJS: false
   removeEmptyAttributes: true
   removeRedundantAttributes: true
   removeScriptTypeAttributes: true
