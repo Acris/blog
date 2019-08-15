@@ -95,14 +95,3 @@ feed:
 search:
   path: search.json
   field: post
-
-# hexo-html-minifier
-html_minifier:
-  collapseWhitespace: true
-  collapseBooleanAttributes: true
-  minifyCSS: true
-  minifyJS: true
-  removeEmptyAttributes: true
-  removeRedundantAttributes: true
-  removeScriptTypeAttributes: true
-  removeStyleLinkTypeAttributes: true
