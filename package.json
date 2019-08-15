@@ -18,7 +18,6 @@
     "hexo-renderer-ejs": "github:hexojs/hexo-renderer-ejs",
     "hexo-renderer-marked": "github:hexojs/hexo-renderer-marked",
     "hexo-renderer-stylus": "github:hexojs/hexo-renderer-stylus",
-    "hexo-server": "github:hexojs/hexo-server",
-    "hexo-uglify": "github:hexojs/hexo-uglify"
+    "hexo-server": "github:hexojs/hexo-server"
   }
 }
