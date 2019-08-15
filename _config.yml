@@ -98,9 +98,7 @@ search:
 
 # hexo-html-minifier
 html_minifier:
-  exclude:
-    - node_modules
-    - themes
+  exclude: node_modules
   collapseWhitespace: true
   collapseBooleanAttributes: true
   minifyCSS: true
