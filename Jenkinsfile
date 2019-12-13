@@ -1,14 +1,18 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node:lts-alpine' 
+    }
+  }
   stages {
     stage('Initialize') {
       steps {
         dir(path: 'source') {
-          git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'oracle-cloud-tokyo')
+          git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
         }
         
         dir(path: 'themes/next') {
-          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'oracle-cloud-tokyo')
+          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
         }
         
         echo 'Initialize success!'
