@@ -2,23 +2,20 @@
   "name": "acris-blog",
   "version": "1.0.0",
   "private": true,
-  "hexo": {
-    "version": ""
-  },
   "dependencies": {
-    "hexo": "github:hexojs/hexo",
-    "hexo-clean-css": "github:hexojs/hexo-clean-css",
-    "hexo-generator-archive": "github:hexojs/hexo-generator-archive",
-    "hexo-generator-category": "github:hexojs/hexo-generator-category",
-    "hexo-generator-feed": "github:hexojs/hexo-generator-feed",
-    "hexo-generator-index": "github:hexojs/hexo-generator-index",
-    "hexo-generator-search": "github:Wzpan/hexo-generator-search",
-    "hexo-generator-sitemap": "github:hexojs/hexo-generator-sitemap",
-    "hexo-generator-tag": "github:hexojs/hexo-generator-tag",
-    "hexo-html-minifier": "github:hexojs/hexo-html-minifier",
-    "hexo-renderer-ejs": "github:hexojs/hexo-renderer-ejs",
-    "hexo-renderer-marked": "github:hexojs/hexo-renderer-marked",
-    "hexo-renderer-stylus": "github:hexojs/hexo-renderer-stylus",
-    "hexo-server": "github:hexojs/hexo-server"
+    "hexo": "^4.1.1",
+    "hexo-clean-css": "^1.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-search": "^2.4.0",
+    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-html-minifier": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0"
   }
 }
