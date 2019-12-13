@@ -2,6 +2,9 @@
   "name": "acris-blog",
   "version": "1.0.0",
   "private": true,
+  "hexo": {
+    "version": "4.1.1"
+  },
   "dependencies": {
     "hexo": "^4.1.1",
     "hexo-clean-css": "^1.0.0",
