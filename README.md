@@ -1,2 +1,2 @@
 # Acris' Blog
-Powered by Hexo, theme by NexT.
+Powered by Hexo, theme by Chic.

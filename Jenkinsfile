@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'node:lts-alpine' 
+      image 'node:lts-alpine'
     }
   }
   stages {
@@ -10,11 +10,11 @@ pipeline {
         dir(path: 'source') {
           git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
         }
-        
-        dir(path: 'themes/next') {
-          git(url: 'git@github.com:Acris/hexo-theme-next.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
+
+        dir(path: 'themes/Chic') {
+          git(url: 'git@github.com:Acris/hexo-theme-Chic.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
         }
-        
+
         echo 'Initialize success!'
       }
     }
