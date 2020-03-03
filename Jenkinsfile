@@ -8,11 +8,11 @@ pipeline {
     stage('Initialize') {
       steps {
         dir(path: 'source') {
-          git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
+          git(url: 'git@github.com:Acris/blog-source.git', branch: 'master', changelog: true, poll: true, credentialsId: 'orz-server')
         }
 
         dir(path: 'themes/Chic') {
-          git(url: 'git@github.com:Acris/hexo-theme-Chic.git', branch: 'master', changelog: true, poll: true, credentialsId: 'arch-linux')
+          git(url: 'git@github.com:Acris/hexo-theme-Chic.git', branch: 'master', changelog: true, poll: true, credentialsId: 'orz-server')
         }
 
         echo 'Initialize success!'
