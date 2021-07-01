@@ -17,7 +17,8 @@ jobs:
           submodules: 'recursive'
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - run: git submodule update --remote --merge
+      - name: Update submodules
+        run: git submodule update --remote --merge
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
