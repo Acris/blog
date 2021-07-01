@@ -14,8 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          submodules: 'recursive'
           token: ${{ secrets.ACCESS_TOKEN }}
+        run: git submodule update --init --recursive --remote
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
