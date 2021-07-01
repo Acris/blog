@@ -45,3 +45,15 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           source: "public/*"
           target: ${{ secrets.DEPLOY_TARGET }}
+          strip_components: 1
+          rm: true
+          overwrite: true
+
+      - name: Change ownership
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          username: ${{ secrets.DEPLOY_USERNAME }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: chown -R ${{ secrets.FILE_OWNER }}:${{ secrets.FILE_GROUP }} ${{ secrets.DEPLOY_TARGET }}
