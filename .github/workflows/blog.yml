@@ -15,10 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
+          submodules: 'recursive'
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Update submodules
-        run: git submodule update --init --remote
+        run: git submodule update --remote --merge
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
