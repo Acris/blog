@@ -19,12 +19,12 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Update submodules
-        run: git submodule update --init --remote
+        run: git submodule update --recursive --remote
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14'
 
       - name: Cache NPM dependencies
         uses: actions/cache@v2
