@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Update submodules
-        run: git submodule update --remote --merge
+        run: git submodule update --init --remote
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
