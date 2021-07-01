@@ -1,13 +1,19 @@
 {
   "name": "acris-blog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
   "hexo": {
-    "version": "5.0.2"
+    "version": ""
   },
   "dependencies": {
-    "hexo": "^5.0.2",
-    "hexo-clean-css": "^1.0.0",
+    "hexo": "^5.4.0",
+    "hexo-clean-css": "^2.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -16,8 +22,6 @@
     "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-html-minifier": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0"
   }

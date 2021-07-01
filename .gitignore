@@ -4,8 +4,6 @@ db.json
 *.log
 node_modules/
 public/
-source/
-themes/
 .deploy*/
 .idea/
 .iml
