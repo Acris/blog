@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive'
           token: ${{ secrets.ACCESS_TOKEN }}
@@ -22,12 +22,12 @@ jobs:
         run: git submodule update --recursive --remote
 
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: '14'
 
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache
