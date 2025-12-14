@@ -43,15 +43,14 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -69,6 +68,10 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
