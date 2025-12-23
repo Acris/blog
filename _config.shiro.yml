@@ -1,0 +1,28 @@
+# Navigation menu
+menu:
+  - name: 首页
+    url: /
+  - name: 归档
+    url: /archives
+  - name: 分类
+    url: /categories
+  - name: 标签
+    url: /tags
+
+site:
+  rss:
+    enabled: true
+
+# Analytics
+analytics:
+  # Only support Google Analytics 4
+  google:
+    enabled: true
+    id: "G-SSN1WL65KY"
+
+# Comment systems
+comments:
+  enabled: true
+  provider: disqus
+  disqus:
+    shortname: "acris"

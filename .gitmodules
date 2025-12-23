@@ -1,6 +1,0 @@
-[submodule "source"]
-	path = source
-	url = git@github.com:Acris/blog-source.git
-[submodule "themes/Chic"]
-	path = themes/Chic
-	url = git@github.com:Acris/hexo-theme-Chic.git
