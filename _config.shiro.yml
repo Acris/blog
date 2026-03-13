@@ -14,10 +14,7 @@ menu:
     url: /tags
 
 comments:
-  enabled: true
-  provider: disqus
-  disqus:
-    shortname: "acris"
+  enabled: false
 
 analytics:
   google:
