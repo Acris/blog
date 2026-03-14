@@ -19,7 +19,7 @@ comments:
   giscus:
     repo: "Acris/blog"
     repo_id: "MDEwOlJlcG9zaXRvcnk4ODMyNDg0Mg=="
-    category: "Giscus"
+    category: "giscus"
     category_id: "DIC_kwDOBUO66s4C4WNz"
     strict: 1
     input_position: top
