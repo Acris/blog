@@ -14,7 +14,16 @@ menu:
     url: /tags
 
 comments:
-  enabled: false
+  enabled: true
+  provider: giscus
+  giscus:
+    repo: "Acris/blog"
+    repo_id: "MDEwOlJlcG9zaXRvcnk4ODMyNDg0Mg=="
+    category: "Giscus"
+    category_id: "DIC_kwDOBUO66s4C4WNz"
+    strict: 1
+    input_position: top
+    lang: zh-CN
 
 analytics:
   google:
