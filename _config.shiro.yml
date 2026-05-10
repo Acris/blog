@@ -29,3 +29,6 @@ analytics:
   google:
     enabled: true
     id: "G-SSN1WL65KY"
+
+search:
+  enabled: true
