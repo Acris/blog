@@ -24,6 +24,12 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           path: source
 
+      - name: Checkout theme
+        uses: actions/checkout@v6
+        with:
+          repository: Acris/hexo-theme-shiro
+          path: themes/shiro
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
