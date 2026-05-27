@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '0 0 * * 0'
   workflow_dispatch:
+    inputs:
+      theme-ref:
+        description: 'Theme git ref to checkout'
+        required: false
+        default: dev
 
 jobs:
   build:
@@ -31,7 +36,7 @@ jobs:
         with:
           repository: Acris/hexo-theme-shiro
           path: themes/shiro
-          ref: dev
+          ref: ${{ inputs.theme-ref || 'dev' }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
