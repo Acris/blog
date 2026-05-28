@@ -12,7 +12,7 @@ on:
       theme-ref:
         description: 'Theme git ref to checkout'
         required: false
-        default: dev
+        default: main
 
 jobs:
   build:
@@ -36,7 +36,7 @@ jobs:
         with:
           repository: Acris/hexo-theme-shiro
           path: themes/shiro
-          ref: ${{ inputs.theme-ref || 'dev' }}
+          ref: ${{ inputs.theme-ref || 'main' }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
