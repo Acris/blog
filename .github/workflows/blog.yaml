@@ -39,7 +39,7 @@ jobs:
           ref: ${{ inputs.theme-ref || 'main' }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
 
