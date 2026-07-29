@@ -13,6 +13,9 @@ menu:
   - name: 标签
     url: /tags
 
+dark_mode:
+  default: system
+
 comments:
   enabled: true
   provider: giscus
